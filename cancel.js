@@ -18,7 +18,8 @@ const req = https.request(options, (res) => {
       process.exit(1)
     } else {
       console.log('Cancelled successfully.')
-      process.exit(0)
+      
+      setTimeout(() => process.exit(0), 5000);
     }
   })
 })
